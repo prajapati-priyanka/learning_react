@@ -1,0 +1,29 @@
+{
+  "name": "learning_react",
+  "version": "1.0.0",
+  "description": "This the project where I will be having depth knowledge of React, from Basic to Advanced.",
+  "scripts": {
+    "test": "JEST"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prajapati-priyanka/learning_react.git"
+  },
+  "author": "Priyanka Prajapati",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prajapati-priyanka/learning_react/issues"
+  },
+  "homepage": "https://github.com/prajapati-priyanka/learning_react#readme",
+  "devDependencies": {
+    "parcel": "^2.10.1",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist":[
+    "last 2 versions"
+  ]
+}
