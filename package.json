@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "This the project where I will be having depth knowledge of React, from Basic to Advanced.",
   "scripts": {
-    "test": "JEST"
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
