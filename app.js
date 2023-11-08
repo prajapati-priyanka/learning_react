@@ -17,16 +17,20 @@ import ReactDOM from "react-dom/client";
 const grandParent = React.createElement(
   "div",
   { id: "grandparent" },
- [React.createElement(
-    "div",
-    { id: "parent" },
-    React.createElement("h1", {}, "Hello I am the child")
-  )],
- [React.createElement(
-    "div",
-    { id: "parent" },
-    React.createElement("h1", {}, "Hello h2 tag")
-  )],
+  [
+    React.createElement(
+      "div",
+      { id: "parent" },
+      React.createElement("h1", {}, "Hello I am the child")
+    ),
+  ],
+  [
+    React.createElement(
+      "div",
+      { id: "parent" },
+      React.createElement("h1", {}, "Hello h2 tag")
+    ),
+  ]
 );
 
 // const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -37,14 +41,16 @@ const grandParent = React.createElement(
 // React.createElement will return an object.
 // It is the "render" method which paints React Element as HTML element in the browser.
 
-
-
-const heading = React.createElement("h1", {class: "heading"}, "I am a heading");
-const JSXHeading = <h1>Hello I am JSX heading</h1>
+const heading = React.createElement(
+  "h1",
+  { class: "heading" },
+  "I am a heading"
+);
+const JSXHeading = <h1>Hello I am JSX heading</h1>;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(JSXHeading)
+root.render(JSXHeading);
 
 // React Element => Javascript Object
 // JSX Element => React ELement => Javascript Object
