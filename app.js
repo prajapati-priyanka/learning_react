@@ -29,13 +29,22 @@ const grandParent = React.createElement(
   )],
 );
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+// const root = ReactDOM.createRoot(document.getElementById("root"));
 
 // console.log(grandParent);
-root.render(grandParent);
+// root.render(grandParent);
 
 // React.createElement will return an object.
 // It is the "render" method which paints React Element as HTML element in the browser.
 
 
 
+const heading = React.createElement("h1", {class: "heading"}, "I am a heading");
+const JSXHeading = <h1>Hello I am JSX heading</h1>
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(JSXHeading)
+
+// React Element => Javascript Object
+// JSX Element => React ELement => Javascript Object
